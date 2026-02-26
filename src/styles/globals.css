@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  min-height: 100vh;
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+}
+
+.componente {
+  border: solid 1px crimson;
+  padding: 1rem;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card {
+  padding: 0.5rem;
+  width: calc((100% - 4rem) / 5 );
+  background-color: black;
+}
+
+.card-image {
+  width: 100%;
+}
+
+.card-information-list {
+  padding-left: 1rem;
+}
+
+.card-information-list ol{
+  padding-left: 2rem;
+}
+
+nav {
+  display: flex;
+  gap: 1rem;
+}
+nav a {
+  color: aqua;
+  text-decoration: none;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  color: blueviolet;
+}
