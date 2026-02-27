@@ -1,6 +1,12 @@
 import Link from "next/link";
+import { useBudget } from "@/contexts/BudgetContext";
 
 export default function Card({ product, showDetails = false }) {
+  const { budgetMode, budgetValue } = useBudget();
+
+	if(budgetMode && budgetValue && product.price > budgetValue) {
+		return
+	}
 
 	return <div className="card">
 		<h2>{product.title}</h2>

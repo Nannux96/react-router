@@ -3,7 +3,6 @@ import axios from "axios";
 
 import Head from "next/head";
 import Header from "@/components/Header"
-
 import ProductList from "@/components/ProductList"
 
 export default function ProductsPage() {
@@ -25,6 +24,7 @@ export default function ProductsPage() {
   useEffect(() => {
     getProducts()
   }, [])
+
 
 
   return (

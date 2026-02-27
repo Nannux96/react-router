@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router"
+import BudgetModeSwitch from "@/components/BudgetModeSwitch"
+import BudgetInput from "@/components/BudgetInput"
 
 export default function Header() {
 
@@ -21,6 +23,8 @@ export default function Header() {
 			<Link href="/" className={isActive("/")}>Home</Link>
 			<Link href="/products" className={isActive("/products")}>Prodotti</Link>
 			<Link href="/about" className={isActive("/about")}>Chi siamo</Link>
+			<BudgetModeSwitch />
+			<BudgetInput />
 		</nav>
 	</div>
 }
